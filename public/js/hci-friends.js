@@ -12,9 +12,15 @@ function initializePage() {
 	console.log("Javascript connected!");
 }
 
+
+function nameClicked() {
+  preventDefault();
+  anagrammedName($(this).text());
+}
+
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
-	
+
 	if (name == "Doug Engelbart") {
 		return "Notable Grudge";
 	} 
